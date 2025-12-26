@@ -1,8 +1,14 @@
 package com.vignesh.crudapi.controller;
 
-import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
 
-@Component
+
+@RestController
 public class BookController {
-
+  @GetMapping("/api/books")
+  public String getBooks() {
+      return "";
+  }
+  
 }
